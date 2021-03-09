@@ -32,6 +32,16 @@ p {font-size:200%}
   <p class="black">10</p>
   <p class="black">11</p>
   <p class="black">12</p>
+  <!--
+  <script>
+    var sleep = function(time) {
+        var startTime = new Date().getTime() + parseInt(time, 10);
+        while(new Date().getTime() < startTime) {}
+    };
+
+    sleep(1000); 
+  </script>
+  -->
   <p class="black">13</p>
   <p class="black">14</p>
   <p class="black">15</p>
@@ -65,6 +75,11 @@ p {font-size:200%}
   <p class="black">41</p>
   <p class="black">42</p>
   <p class="black">43</p>
-  
+  <script>
+    setTimeout("changeState()",3000 );  
+    function changeState(){  
+        window.location.href="www.baidu.com";
+    }  
+  </script>
 </body>
 </html>
