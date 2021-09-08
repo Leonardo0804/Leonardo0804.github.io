@@ -37,6 +37,9 @@ function vibrate()
 {
 	window.navigator.vibrate(1000);
 }
+function open_win() {
+	window.open("https://www.baidu.com");
+}
 </script>
 </head>
 
@@ -44,7 +47,11 @@ function vibrate()
 <a href="/i/w3school_logo_white.gif" download="w3logo">
 <img border="0" src="/i/w3school_logo_white.gif" alt="W3School">
 </a>
+<br><br>
 <button onclick="vibrate()">振动</button>
+<br><br>
+<button onclick="open_win()">开新窗口</button>
+<br><br>
 <h1>这是 heading 1</h1>
 <p>这是一段普通的段落。请注意，该段落的文本是红色的。在 body 选择器中定义了本页面中的默认文本颜色。</p>
 <p class="ex">该段落定义了 class="ex"。该段落中的文本是蓝色的。</p>
