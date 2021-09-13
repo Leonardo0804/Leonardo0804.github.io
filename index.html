@@ -4,7 +4,7 @@
 <!--
 <meta name="screen-orientation" content="landscape">
 -->
-<meta name="nightmode" content="disable">
+<!--meta name="nightmode" content="disable"-->
 
 <meta name="full-screen" content="yes">
 
@@ -30,6 +30,7 @@ p.black {
         user-select: none;
     }
 p {font-size:200%}
+.div1 {text-align:left}
 </style>
 <title>Test</title>
 <script>
@@ -39,6 +40,20 @@ function vibrate()
 }
 function open_win() {
 	window.open("https://www.baidu.com");
+}
+
+function mytestAlert() {
+    alert("my test alert color");
+}
+
+function disp_prompt()
+{
+   prompt("input your name:","Bill Gates")
+}
+
+function show_confirm()
+{
+  confirm("Press a button!");
 }
 </script>
 </head>
@@ -123,5 +138,41 @@ function open_win() {
     }  
   </script>
   -->
+   <center>
+	<div class="div1">
+	<form>
+	text:<input type="text" name="text" />
+	<input type="submit" value="submit" />
+	<input type="button" value="button" />
+	checkbox:<input type="checkbox" value="checkbox1" />
+	<input type="checkbox" value="checkbox2" />
+	radio:<input type="radio" value="radio1" />
+	<input type="radio" value="radio2" /><br />
+	password:<input type="password" value="password" />
+	<input type="file" value="file" /><br />
+	date:<input type="date" value="date" /><br /><br />
+	time:<input type="time" value="time" /><br /><br />
+	datetime:<input type="datetime" value="datetime" /><br /><br />
+	datetime-local:<input type="datetime-local" value="datetime-local" /><br /><br />
+	email:<input type="email" value="email" /><br /><br />
+	hidden:<input type="hidden" value="hidden" /><br /><br />
+	number:<input type="number" value="number" /><br /><br />
+	range:<input type="range" value="range" /><br /><br />
+	reset:<input type="reset" value="reset" /><br /><br />
+	month:<input type="month" value="time" /><br /><br />
+	url:<input type="url" value="url" /><br /><br />
+	week:<input type="week" value="week" /><br /><br />
+    select:<select>
+	<option value="-2">请选择</option>
+	<option value="1">学生</option>
+	<option value="2">文职（如秘书、助理、文员）</option>
+	</select><br>
+	color:<input type="color"><br>
+	</form>
+	<a href="#" onclick="mytestAlert()">mytestAlert</a>
+	<a href="#" onclick="disp_prompt()">disp_prompt</a>
+	<a href="#" onclick="show_confirm()">show_confirm</a>
+	</div>
+   </center>
 </body>
 </html>
