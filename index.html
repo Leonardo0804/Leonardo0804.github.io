@@ -2,30 +2,38 @@
 <head>
 
 <style type="text/css">
-li {
-    position: relative;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -moz-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    min-height: 1.742222rem;
-    border-bottom: .017778rem dotted rgba(51,51,51,.2)
+header {
+    color: rgb(140, 140, 140);
+    font-size: 0.34rem;
+    text-align: center;
+    line-height: 0.9rem;
+    border-bottom: 1px solid #cdcdcd;
+    background-color: #fff;
 }
-li:before
-{
-content:"";
-width:2.088889rem;
-height:100%;
-margin-right:.124444rem;
-min-height:1.742222rem;
-display:block;
-background:#2b6ae6;
+
+.left {
+    float: left;
+}
+header div {
+    width: 2rem;
+    height: 0.9rem;
+    position: relative;
+}
+header div span {
+    position: absolute;
+    left: 20%;
+    top: 32%;
+    width: 0;
+    height: 0;
+    transform: rotate(45deg);
+    border: 0.16rem solid rgb(140, 140, 140);
+}
+header div span:nth-of-type(2) {
+    left: 23%;
+    border-color: white;
+}
+.right {
+    float: right;
 }
 </style>
 <title>Test</title>
@@ -33,9 +41,12 @@ background:#2b6ae6;
 </head>
 
 <body>
-<ul>
-<li>习近平谋划推动京津冀协同发展谱写新篇章</li>
-<li>两办印发意见：进一步加强生物多样性保护</li>
-</ul>
+<header>
+	<div class="left">
+		<span></span><span></span>
+	</div>
+	天气视界
+    <div class="right"></div>
+</header>
 </body>
 </html>
